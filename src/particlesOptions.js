@@ -1,42 +1,38 @@
 export const particlesOptions = {
-    background: {
-        color: {
-            value: "#122138",
-        },
-      },
-      fpsLimit: 60,
-      interactivity: {
+  
+
+    interactivity: {
         detectsOn: "canvas",
         events: {
-          onClick: {
-            enable: true,
-            mode: "push",
-          },
-          onHover: {
-            enable: true,
-            mode: "repulse",
-          },
-          resize: true,
+            onClick: {
+                enable: false,
+                mode: "push",
+            },
+            onHover: {
+                enable: true,
+                mode: "repulse",
+            },
+            resize: true,
         },
         modes: {
-          bubble: {
-            distance: 400,
-            duration: 2,
-            opacity: 0.8,
-            size: 40,
-          },
-          push: {
-            quantity: 4,
-          },
-          repulse: {
-            distance: 200,
-            duration: 0.4,
-          },
+            bubble: {
+                distance: 400,
+
+                opacity: 0.8,
+                size: 40,
+            },
+            push: {
+                quantity: 4,
+            },
+            repulse: {
+                distance: 200,
+
+            },
         },
-      },
+    },
     particles: {
         number: {
-            value: 160,
+            value: 150,
             density: {
                 enable: false
             }
@@ -61,18 +57,18 @@ export const particlesOptions = {
             },
             modes: {
                 bubble: {
-                    distance: 400,
-                    duration: 2,
+                    distance: 100,
+
                     opacity: 0.8,
                     size: 40,
-                   
+
                 },
                 push: {
                     quantity: 4,
                 },
                 repulse: {
                     distance: 200,
-                    duration: 0.4,
+
                 },
             },
         },
@@ -92,7 +88,7 @@ export const particlesOptions = {
             },
             move: {
                 direction: "none",
-                enable: true,
+                enable: false,
                 outMode: "bounce",
                 random: false,
                 speed: 6,

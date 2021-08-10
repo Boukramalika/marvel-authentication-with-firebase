@@ -5,8 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import '../../App.css';
 import Header from '../Header/Header'
-//import Particles from 'react-particles-js'
-//import {particlesOptions}from "../../particlesOptions.js"
+
 import Landing from '../Landing/Landing';
 import Footer from '../Footer/Footer';
 import Welcome from '../Welcome/Welcome';
@@ -25,13 +24,11 @@ function App() {
         <Route path="/login" component={Login} />
         <Route path="/signup" component={Signup} />
         <Route component={ErrorPage} />
+
       </Switch>
 
       <Footer />
-      {/*<Particles
-        className="particles particles-box"
-        params={particlesOptions}
-      /> */}
+
     </Router>
   );
 }
